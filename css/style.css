@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* === HEADER === */
+header {
+  position: relative;
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: #ff5a00;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ff7c2a;
+  transform: translateY(-2px);
+}
+
+/* === SECTIONS === */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #0077ff;
+  margin-bottom: 30px;
+}
+
+/* === TEST SECTION === */
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* === COMPARISON === */
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.red h3 { color: #ff4444; }
+.green h3 { color: #00a44f; }
+
+/* === IMAGE SECTION === */
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.image-section img {
+  flex: 1 1 300px;
+  max-width: 50%;
+}
+
+.image-section .text {
+  flex: 1 1 300px;
+  padding: 30px;
+}
+
+.levels {
+  list-style: disc;
+  margin-left: 30px;
+  line-height: 1.8;
+}
+
+/* === REVIEWS === */
+.reviews {
+  background: #eef6ff;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.review {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* === FOOTER === */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer .small {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  header h1 { font-size: 2rem; }
+  .image-section img { max-width: 100%; }
+  .image-section { flex-direction: column; }
+}
